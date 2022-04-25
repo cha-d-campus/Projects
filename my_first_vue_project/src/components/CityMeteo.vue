@@ -1,9 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
     <h3>Nom de la ville</h3>
-    <p>{{ name }}</p>
-
+    <p>{{ cityname }}</p>
     <h3>Météo</h3>
     <ul>
       <li>Temps : {{ weather }}</li>
@@ -23,7 +21,7 @@ export default {
 //   },
   data() {
       return {
-        name: "Grenoble", // nom de la ville
+        cityname: "Grenoble", // nom de la ville
         weather: "Peu nuageux", // descriptif météo
         temperature: 20.55, // température en °C
         updatedAt: new Date(), // date de dernière mise à jour
