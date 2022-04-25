@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo-meteo.png">
-    <HelloWorld msg="Météo du jour"/>
+    <CitiesList msg="Météo du jour"/>
     
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CitiesList from './components/CitiesList.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    CitiesList,
   }
 }
 </script>
@@ -24,7 +24,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  margin-bottom: 60px;
+
 }
+
+@import'~bootstrap/dist/css/bootstrap.css';
 </style>
