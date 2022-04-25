@@ -10,23 +10,25 @@
 
     <h3>Date</h3>
     <p>{{ updatedAt.toLocaleString() }}</p>
+    <p>{{formatedDate}}</p>
   </div>
 </template>
 
 <script>
+import * as timeago from 'timeago.js';
 export default {
   name: "CityMeteo",
-//   props: {
-    
-//   },
-  data() {
-      return {
-        cityname: "Grenoble", // nom de la ville
-        weather: "Peu nuageux", // descriptif météo
-        temperature: 20.55, // température en °C
-        updatedAt: new Date(), // date de dernière mise à jour
-      };
-    },
+  props: {
+    cityname: String,
+    weather: String,
+    temperature: Number,
+    updatedAt: Date
+  },
+  computed: {
+    formatedDate: function(){
+      return timeago.format(this.updatedAt, 'fr_FR');
+    }
+  }
 };
 </script>
 
