@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mt-4 mb-4">
+    <div class="container m-4">
       <div class="row justify-content-center">
         <div class="card border border-info border-4 col-4" style="width: 28rem">
           <div class="hello card-body">

@@ -1,13 +1,15 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
-    <div v-for="city in cities" :key="city.id">
-      <CityMeteo
-        :name="city.name"
-        :weather="city.weather"
-        :temperature="city.temperature"
-        :updatedAt="city.updatedAt"
-      />
+    <div class="flex d-inline-flex">
+      <div v-for="city in cities" :key="city.id">
+        <CityMeteo
+          :name="city.name"
+          :weather="city.weather"
+          :temperature="city.temperature"
+          :updatedAt="city.updatedAt"
+        />
+      </div>
     </div>
   </div>
 </template>
