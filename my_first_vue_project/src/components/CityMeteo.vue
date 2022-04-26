@@ -38,6 +38,11 @@ export default {
       return timeago.format(this.updatedAt, "fr_FR");
     },
   },
+  // methods: { // affichage de l'icone
+  //   displayIcon(){
+  //     return 
+  //   }
+  // }
 };
 </script>
 
