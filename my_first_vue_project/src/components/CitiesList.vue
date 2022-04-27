@@ -22,10 +22,10 @@ import axios from "axios";
 export default {
   name: "CitiesList",
   props: {
-    msg: String,
+    msg: String
   },
   components: {
-    CityMeteo,
+    CityMeteo
   },
   data() {
     return {
